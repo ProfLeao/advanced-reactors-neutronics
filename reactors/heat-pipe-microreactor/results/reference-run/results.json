@@ -1,0 +1,23 @@
+{
+  "run": {
+    "started_at": "2026-10-20T22:22:07.320953",
+    "finished_at": "2026-10-22T06:56:30.964263",
+    "neutronics_iteration": 3,
+    "config_hash": "380a358212157396"
+  },
+  "neutronics": {
+    "k_eff": 0.9965383983101718,
+    "k_eff_sigma_1": 2.3901727203314263e-05,
+    "pin_power_peaking": 1.278430909000256,
+    "normalized_fission_power_MWt": 1.0
+  },
+  "provenance": {
+    "source_summary": "microreactor_sim/results/meta_iter_003.json",
+    "source_analysis": "microreactor_sim/results/analysis_final.json",
+    "source_figures": "microreactor_sim/results/plots_neutronics/",
+    "openmc_version": null,
+    "raw_statepoint_included": false,
+    "statepoint_verified": false,
+    "note": "The source analysis references an iteration-2 statepoint; available statepoint manifests have a different config hash from this run."
+  }
+}

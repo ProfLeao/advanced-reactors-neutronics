@@ -1,0 +1,20 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+.idea/
+.vscode/
+.DS_Store
+
+# OpenMC outputs and restart data
+**/statepoint.*.h5
+**/summary.h5
+**/model.xml
+**/tallies.out
+**/power.npy
+**/flux.npy
+**/neutronics_output*/
+**/simulation-output/
+*.log

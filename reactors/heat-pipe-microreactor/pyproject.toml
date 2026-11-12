@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "heat-pipe-microreactor-neutronics"
+version = "0.1.0"
+description = "OpenMC neutronics model of a heat-pipe-cooled microreactor"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=2.0,<3",
+    "matplotlib>=3.8",
+    "PyYAML>=6.0",
+    "h5py>=3.10",
+]
+
+[project.scripts]
+heat-pipe-microreactor = "heat_pipe_microreactor.neutronics:main"
+heat-pipe-neutronics-plots = "heat_pipe_microreactor.analysis:main"
+heat-pipe-geometry-plots = "heat_pipe_microreactor.geometry_plots:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

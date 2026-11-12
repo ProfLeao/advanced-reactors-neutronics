@@ -1,0 +1,49 @@
+core:
+  geometry: hexagonal
+  hex_side_cm: 24.7
+  pitch_cm: 3.03
+  active_height_cm: 40.0
+  n_heat_pipes: 37
+  n_rings: 6
+  fuel_per_ring: [6, 6, 18, 12, 30, 18]
+
+fuel:
+  material: UN
+  enrichment_by_ring: [60, 62, 70, 70, 75, 65]
+  enrichment: 70.0
+  radius_cm: 1.185
+  height_cm: 40.0
+  density_gcm3: 13.6
+
+clad:
+  material: MoRe
+  inner_radius_cm: 1.195
+  outer_radius_cm: 1.219
+  thickness_cm: 0.024
+
+heat_pipe:
+  material_wall: MoRe
+  material_fluid: Na
+  inner_radius_cm: 0.90
+  outer_radius_cm: 1.02
+  operating_temp_K: 1000.0
+
+reflector:
+  material: BeO
+  thickness_cm: 10.0
+  active: false
+
+openmc:
+  batches: 20
+  inactive: 5
+  particles: 500
+  checkpoint_interval: 5
+  mesh_tally_dim: [40, 40, 12]
+  temperature_default_K: 1200.0
+  temperature_min_K: 250.0
+  temperature_max_K: 2500.0
+  temperature_range_K: [250.0, 2500.0]
+  cross_sections_path: ""
+
+output:
+  dpi: 100
